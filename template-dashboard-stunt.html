@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              600: "600px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- End of Tailwind -->
+  </head>
+  <body class="antialiased bg-white-100">
+    <div
+      class="z-50 flex flex-wrap justify-between md:justify-around items-center h-16 fixed w-full top-0 bg-white drop-shadow" style="background-color: #E37222;"
+    >
+      <a href="./index.html" class="font-bold text-2xl text-zinc-800 px-5 ml-8"
+        >
+        <img src="./assets/logo.png" style="width: 90px; height: 50px;">
+        </a
+      >
+
+      <!-- Mobile -->
+
+      <ul class="md:hidden flex">
+        <div class="group">
+          <button class="p-5 hover:bg-grey-100 w-36" style="color: white;">
+            <span>MENU</span>
+          </button>
+          <div>
+            <ul
+              class="group-hover:block !absolute hidden float-right right-0 bg-white drop-shadow"
+            >
+              <div>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./index.html"> HOME </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./news.html"> NEWS </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./about-us.html"> ABOUT US </a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </ul>
+
+      <!-- Desktop -->
+
+      <ul class="md:flex justify-around items-center hidden" style="color: white;">
+        <a href="./index.html" class="hover:bg-zinc-200 px-8 py-5">HOME</a>
+        <a href="./news.html" class="hover:bg-zinc-200 px-8 py-5">NEWS</a>
+        <a href="./about-us.html" class="hover:bg-zinc-200 px-8 py-5"
+          >ABOUT US</a
+        >
+      </ul>
+    </div>
+    <!-- Main Image -->
+    <div class="h-600 relative mb-8">
+      <img
+        class="w-full h-full object-cover"
+        src="./assets/stunting.png"
+      />
+    </div>
+    <!-- Main Image -->
+
+    <!-- Template -->
+    <div class="p-16 flex w-full h-fit justify-center">
+      <div class="w-full xl:w-4/5">
+      	
+        <p class="text-justify">
+          Stunting adalah kondisi gagal tumbuh pada anak berusia dibawah lima tahun (balita) akibat kekurangan asupan gizi kronis dan infeksi berulang terutama pada periode 1.000 Hari Pertama Kehidupan (HPK), yaitu dari janin hingga anak berusia 23 bulan. Stunting ditentukan oleh indeks antropometri yang menggunakan data panjang badan berdasarkan umur (PB/U) untuk anak usia dibawah 2 tahun dan menggunakan data tinggi badan berdasarkan umur (TB/U) untuk anak usia 2 tahun ke atas. Dalam laporan Riskesdas, kondisi stunting merupakan gabungan antara anak dengan status gizi “pendek” dan “sangat pendek”.
+        </p>
+        <br>
+        <b>
+        	Stunting tidak bisa disembuhkan, tapi bisa dicegah. Penting untuk mencegah stunting pada masa golden period, yaitu 1000 hari pertama kehidupan, termasuk masa janin hingga anak berusia 2 tahun.
+        </b>
+      </div>
+    </div>
+    <!-- Template -->
+
+    <!-- Dashboard -->
+    <div class="px-16 w-full justify-center flex h-600">
+      <iframe 
+      class="w-full h-96 xl:w-4/5 xl:h-full"
+      src="https://datastudio.google.com/embed/reporting/34107685-26d8-4984-87a3-84b6dad20209/page/p_84l98s4ewc" 
+      frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- Dashboard -->
+
+    <!-- Footer -->
+    <div
+      class="mt-8 w-full h-fit xl:h-48 shadow-lg p-12 flex flex-wrap xl:flex-nowrap" style="background-color: #07889B;"
+    >
+      <div
+        class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0"
+      >
+        <img
+          class="object-cover w-30 h-12"
+          src="./assets/logo_orange.png"
+        />
+        <div class="w-full flex flex-wrap xl:justify-center">
+          <p class="mt-2 text-white font-bold text-2xl">"Akurat & Terpercaya"</p>
+        </div>
+      </div>
+      <div class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0">
+        <p class="text-white font-bold text-2xl">Visit Us</p>
+        <div class="w-full flex flex-wrap xl:justify-center gap-4 mt-6">
+          <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+          <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+          <i class="fas fa-envelope fa-2x" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap xl:justify-center" style="background-color: black; color: white;">
+      <p>&copy Copyright KlikInfo 2022</p>
+    </div>
+    <!-- End of Footer -->
+  </body>
+</html>

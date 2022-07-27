@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              600: "600px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- End of Tailwind -->
+  </head>
+  <body class="antialiased bg-zinc-100">
+    <div
+      class="z-50 flex flex-wrap justify-between md:justify-around items-center h-16 fixed w-full top-0 bg-white drop-shadow" style="background-color: #E37222;"
+    >
+      <a href="./index.html" class="font-bold text-2xl text-zinc-800 px-5 ml-8"
+        >
+        <img src="./assets/logo.png" style="width: 90px; height: 50px;">
+        </a
+      >
+
+      <!-- Mobile -->
+
+      <ul class="md:hidden flex">
+        <div class="group">
+          <button class="p-5 hover:bg-grey-100 w-36" style="color: white;">
+            <span>MENU</span>
+          </button>
+          <div>
+            <ul
+              class="group-hover:block !absolute hidden float-right right-0 bg-white drop-shadow"
+            >
+              <div>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./index.html"> HOME </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./news.html"> NEWS </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./about-us.html"> ABOUT US </a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </ul>
+
+      <!-- Desktop -->
+
+      <ul class="md:flex justify-around items-center hidden" style="color: white;">
+        <a href="./index.html" class="hover:bg-zinc-200 px-8 py-5">HOME</a>
+        <a href="./news.html" class="hover:bg-zinc-200 px-8 py-5">NEWS</a>
+        <a href="./about-us.html" class="hover:bg-zinc-200 px-8 py-5"
+          >ABOUT US</a
+        >
+      </ul>
+    </div>
+    <!-- Main Image -->
+    <div class="h-600 relative mb-8">
+      <img
+        class="w-full h-full object-cover"
+        src="./assets/waste.png"
+      />
+    </div>
+    <!-- Main Image -->
+
+    <!-- Template -->
+    <div class="p-16 flex w-full h-fit justify-center">
+      <div class="w-full xl:w-4/5">
+        <p class="text-justify">
+          Timbulan sampah merupakan salah satu permasalahan utama yang harus dihadapi Indonesia dari tahun ke tahun.  Jumlah timbulan ini akan terus bertambah seiring dengan pertumbuhan jumlah penduduk yang semakin meningkat. Saat ini, Indonesia menempati peringkat ke – 2 sebagai negara penghasil sampah di dunia. Banyaknya timbulan sampah yang ada ini tidak dibarengi dengan pengelolaan sampah yang baik sehingga timbulan sampah terus bertambah dan mencemari lingkungan.
+        </p>
+      </div>
+    </div>
+    <!-- Template -->
+
+    <!-- Dashboard -->
+    <div class="px-16 w-full justify-center flex h-500">
+      <div class='tableauPlaceholder ' id='viz1658833079629' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='PopxWaste ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SampahdiIndonesia&#47;PopxWaste&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='SampahdiIndonesia&#47;PopxWaste' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SampahdiIndonesia&#47;PopxWaste&#47;1.png' /> <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-GB' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>                
+      <script type='text/javascript'>                    var divElement = document.getElementById('viz1658833079629');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1026px';vizElement.style.maxWidth='1226px';vizElement.style.width='100%';vizElement.style.minHeight='1075px';vizElement.style.maxHeight='1675px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1026px';vizElement.style.maxWidth='1226px';vizElement.style.width='100%';vizElement.style.minHeight='1075px';vizElement.style.maxHeight='1675px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
+
+    </div>
+    <!-- Dashboard -->
+
+     <!-- Template -->
+    <div class="p-16 flex w-full mt-12 h-fit justify-center">
+      <div class="w-full xl:w-4/5">
+        <p class="text-justify">
+          Tidak semua sampah mudah terurai di lingkungan. Banyak sampah yang membutuhkan puluhan bahkan ribuan tahun untuk terurai. Salah satu contoh bahan yang sulit untuk terurai adalah plastik. Maka dari itu penting untuk kita mulai memilah sampah dan berusaha mendaur ulang sampah sampah yang masih bisa digunakan. Salah satu hal yang dapat kita lakukan untuk membantu mendaur ulang sampah adalah dengan memberikannya ke bank sampah.
+        </p>
+      </div>
+    </div>
+    <!-- Template -->
+
+    <!-- Dashboard -->
+    <div class="px-16 w-full justify-center flex h-600">
+     <iframe
+        class="w-full h-96 xl:w-4/5 xl:h-full"
+        src="https://datastudio.google.com/embed/reporting/7478d15d-1683-46f4-8346-0745ca47ce09/page/YhtwC"
+        frameborder="0"
+        style="border: 0"
+      ></iframe>
+
+    </div>
+    <!-- Dashboard -->
+
+    <!-- Footer -->
+    <div
+      class="mt-8 w-full h-fit xl:h-48 shadow-lg p-12 flex flex-wrap xl:flex-nowrap" style="background-color: #07889B;"
+    >
+      <div
+        class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0"
+      >
+        <img
+          class="object-cover w-30 h-12"
+          src="./assets/logo_orange.png"
+        />
+        <div class="w-full flex flex-wrap xl:justify-center">
+          <p class="mt-2 text-white font-bold text-2xl">"Akurat & Terpercaya"</p>
+        </div>
+      </div>
+      <div class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0">
+        <p class="text-white font-bold text-2xl">Visit Us</p>
+        <div class="w-full flex flex-wrap xl:justify-center gap-4 mt-6">
+          <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+          <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+          <i class="fas fa-envelope fa-2x" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap xl:justify-center" style="background-color: black; color: white;">
+      <p>&copy Copyright KlikInfo 2022</p>
+    </div>
+    <!-- End of Footer -->
+  </body>
+</html>

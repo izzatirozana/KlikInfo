@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              600: "600px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- End of Tailwind -->
+  </head>
+  <body class="antialiased bg-white">
+    <div
+      class="z-50 flex flex-wrap justify-between md:justify-around items-center h-16 fixed w-full top-0 bg-white drop-shadow" style="background-color: #E37222;"
+    >
+      <a href="./index.html" class="font-bold text-2xl text-zinc-800 px-5 ml-8"
+        >
+        <img src="./assets/logo.png" style="width: 90px; height: 50px;">
+        </a
+      >
+
+      <!-- Mobile -->
+
+      <ul class="md:hidden flex">
+        <div class="group">
+          <button class="p-5 hover:bg-grey-100 w-36" style="color: white;">
+            <span>MENU</span>
+          </button>
+          <div>
+            <ul
+              class="group-hover:block !absolute hidden float-right right-0 bg-white drop-shadow"
+            >
+              <div>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./index.html"> HOME </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./news.html"> NEWS </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./about-us.html"> ABOUT US </a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </ul>
+
+      <!-- Desktop -->
+
+      <ul class="md:flex justify-around items-center hidden" style="color: white;">
+        <a href="./index.html" class="hover:bg-zinc-200 px-8 py-5">HOME</a>
+        <a href="./news.html" class="hover:bg-zinc-200 px-8 py-5">NEWS</a>
+        <a href="./about-us.html" class="hover:bg-zinc-200 px-8 py-5"
+          >ABOUT US</a
+        >
+      </ul>
+    </div>
+    <!-- Main Image -->
+    <div class="h-600 relative mb-8">
+      <img
+        class="w-full h-full object-cover"
+        src="./assets/BannerAboutUs.png"
+      />
+    </div>
+    <!-- Main Image -->
+
+    <!-- About Us -->
+    <div
+      class="p-16 flex justify-evenly w-full mt-12 h-fit flex-wrap xl:flex-nowrap"
+    >
+      <div class="w-full xl:w-5/12">
+        <img
+          class="w-96 h-96 object-cover"
+          src="./assets/about_us.jpg"
+        />
+      </div>
+      <div class="w-full xl:w-7/12 mt-8 xl:mt-0">
+        <p class="text-justify">
+          Saat ini istilah "Data Is The New Oil" menjadi cukup familiar di telinga masyarakat Indonesia, telebih pada bulan Januari lalu istilah ini disebutkan secara langsung oleh Presiden Jokowi. Beliau menyebutkan, data merupakan sesuatu kekayaan baru yang bahkan lebih berharga dari harga minyak. Data yang valid juga disebut sebagai kunci utama kesuksesan pembangunan sebuah negara. Pengolahan dan analisis data tentu menjadi hal yang krusial dan mendapat perhatian khusus dari seluruh aspek. Oleh karena itu KlikInfo hadir untuk menyajikan hasil olahan data yang valid berupa dashboard dinamis yang megandung informasi yang bermanfaat.
+        </p></br>
+        <p class="text-justify">
+          KlikInfo akan berfokus pada 3 tema permasalahan yakni Healt, Disaster Management, dan Waste. Ketiga tema tersebut merupakan pengerucutan permasalahan utama yang sering kita temui. Melaui KlikInfo diharapkan para pengunjung dapat memperoleh informasi yang bermanfaat guna meningkatkan kepedulian akan 3 permasalahan utama tersebut. Tujuan tersebut juga didukung dengan tagline "Akurat & Terpercaya" sebagai wujud komitmen bahwa data yang kami sajikan adalah data yang valid.
+        </p></br>
+        <p class="text-justify">
+          KlikInfo merupakan hasil kolaborasi dari peserta Studi Independen laerning track Data Analyst Generasi GIGIH 2.0 by Yayasan Bangsa Bisa and GoTo dan learning track Full Stack Web Developer by Binar Academy.
+        </p>
+      </div>
+    </div>
+    <!-- About Us -->
+
+    <!-- Team -->
+    <div
+      class="w-full h-fit xl:h-600 flex flex-wrap justify-center p-12" style="background-color: rgba(238, 171, 123, 0.2);"
+    >
+      <p class="text-2xl font-semibold">Meet Our Team</p>
+      <div class="w-full mt-8 gap-8 flex justify-between flex-wrap">
+        <img
+          class="object-cover rounded drop-shadow-lg" style="width: 235px; height: 425px;"
+          src="./assets/ara.png"
+        />
+        <img
+          class="object-cover rounded drop-shadow-lg" style="width: 235px; height: 425px;"
+          src="./assets/nab.png"
+        />
+        <img
+          class="object-cover rounded drop-shadow-lg" style="width: 235px; height: 425px;"
+          src="./assets/oja.png"
+        />
+        <img
+          class="object-cover rounded drop-shadow-lg" style="width: 235px; height: 425px;"
+          src="./assets/gres.png"
+        />
+      </div>
+    </div>
+    <!-- Team -->
+
+    <!-- Footer -->
+    <div
+      class="mt-8 w-full h-fit xl:h-48 shadow-lg p-12 flex flex-wrap xl:flex-nowrap" style="background-color: #07889B;"
+    >
+      <div
+        class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0"
+      >
+        <img
+          class="object-cover w-30 h-12"
+          src="./assets/logo_orange.png"
+        />
+        <div class="w-full flex flex-wrap xl:justify-center">
+          <p class="mt-2 text-white font-bold text-2xl">"Akurat & Terpercaya"</p>
+        </div>
+      </div>
+      <div class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0">
+        <p class="text-white font-bold text-2xl">Visit Us</p>
+        <div class="w-full flex flex-wrap xl:justify-center gap-4 mt-6">
+          <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+          <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+          <i class="fas fa-envelope fa-2x" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap xl:justify-center" style="background-color: black; color: white;">
+      <p>&copy Copyright KlikInfo 2022</p>
+    </div>
+    <!-- End of Footer -->
+  </body>
+</html>

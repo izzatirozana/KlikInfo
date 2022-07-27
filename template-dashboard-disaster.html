@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              600: "600px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- End of Tailwind -->
+  </head>
+  <body class="antialiased bg-zinc-100">
+    <div
+      class="z-50 flex flex-wrap justify-between md:justify-around items-center h-16 fixed w-full top-0 bg-white drop-shadow" style="background-color: #E37222;"
+    >
+      <a href="./index.html" class="font-bold text-2xl text-zinc-800 px-5 ml-8"
+        >
+        <img src="./assets/logo.png" style="width: 90px; height: 50px;">
+        </a
+      >
+
+      <!-- Mobile -->
+
+      <ul class="md:hidden flex">
+        <div class="group">
+          <button class="p-5 hover:bg-grey-100 w-36" style="color: white;">
+            <span>MENU</span>
+          </button>
+          <div>
+            <ul
+              class="group-hover:block !absolute hidden float-right right-0 bg-white drop-shadow"
+            >
+              <div>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./index.html"> HOME </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./news.html"> NEWS </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./about-us.html"> ABOUT US </a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </ul>
+
+      <!-- Desktop -->
+
+      <ul class="md:flex justify-around items-center hidden" style="color: white;">
+        <a href="./index.html" class="hover:bg-zinc-200 px-8 py-5">HOME</a>
+        <a href="./news.html" class="hover:bg-zinc-200 px-8 py-5">NEWS</a>
+        <a href="./about-us.html" class="hover:bg-zinc-200 px-8 py-5"
+          >ABOUT US</a
+        >
+      </ul>
+    </div>
+    <!-- Main Image -->
+    <div class="h-600 relative mb-8">
+      <img
+        class="w-full h-full object-cover"
+        src="./assets/disaster.png"
+      />
+    </div>
+    <!-- Main Image -->
+
+    <!-- Template -->
+    <div class="p-16 flex w-full h-fit justify-center">
+      <div class="w-full xl:w-4/5">
+        <p class="text-justify">
+          Jakarta sampai saat ini masih merupakan ibu kota negara Indonesia. Sebagai ibu kota, tentunya Jakarta sering mendapat perhatian, terutama terkait bencana banjir dan penanganannya. Pada tahun 2020, Bapak Subejo selaku Kepala Badan Penanggulangan Bencana Daerah (BPBD) DKI Jakarta menyatakan bahwa penyebab banjir antara lain karena intensitas dan volume curah hujan yang tinggi, bahkan di daerah tertentu curah hujan agak ekstrim di daerah Halim. . Di hulu sungai juga terjadi luapan dan hujan deras. Banyak rumah dan jalan rusak akibat bencana dan terendam banjir. Seperti kita ketahui, salah satu upaya DKI Jakarta untuk mengatasi banjir adalah dengan menggunakan pompa hisap untuk membuang air ke laut dan pompa hisap ini tersebar di beberapa wilayah di DKI Jakarta.
+        </p></br>
+        <p class="text-justify">
+          Bencana banjir ini tentunya akan menimbulkan kerugian. Bank Indonesia (BI) Perwakilan Provinsi DKI Jakarta menyatakan banjir yang terjadi di Jakarta pada 1 Januari 2020 mengakibatkan kerugian ekonomi minimal Rp. 960 miliar. Kepala Perwakilan BI Provinsi DKI Jakarta Hamid Ponco Wibowo mengatakan kerugian ini terjadi karena beberapa kegiatan ekonomi di ibu kota lumpuh. Tanpa kita sadari, perubahan musim, volume curah hujan dan jumlah pompa air adalah beberapa hal yang akan dan telah mempengaruhi penanganan dan pencegahan banjir di DKI Jakarta.  
+        </p></br>
+        <p class="text-justify">
+          Oleh karena itu, berikut adalah hasil pengolahan data kejadian banjir di DKI Jakarta selama tahun 2020 yang disajikan dalam bentuk data dashboard
+        </p>
+      </div>
+    </div>
+    <!-- Template -->
+
+    <!-- Dashboard -->
+    <div class="px-16 w-full justify-center flex h-600">
+      <iframe
+        class="w-full h-96 xl:w-4/5 xl:h-full"
+        src="https://datastudio.google.com/embed/reporting/a2bc4404-3832-42b9-ae8f-288b6da34407/page/p_00qgbkibwc"
+        frameborder="0"
+        style="border: 0"
+      ></iframe>
+    </div>
+    <!-- Dashboard -->
+
+    <!-- Footer -->
+    <div
+      class="mt-8 w-full h-fit xl:h-48 shadow-lg p-12 flex flex-wrap xl:flex-nowrap" style="background-color: #07889B;"
+    >
+      <div
+        class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0"
+      >
+        <img
+          class="object-cover w-30 h-12"
+          src="./assets/logo_orange.png"
+        />
+        <div class="w-full flex flex-wrap xl:justify-center">
+          <p class="mt-2 text-white font-bold text-2xl">"Akurat & Terpercaya"</p>
+        </div>
+      </div>
+      <div class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0">
+        <p class="text-white font-bold text-2xl">Visit Us</p>
+        <div class="w-full flex flex-wrap xl:justify-center gap-4 mt-6">
+          <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+          <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+          <i class="fas fa-envelope fa-2x" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap xl:justify-center" style="background-color: black; color: white;">
+      <p>&copy Copyright KlikInfo 2022</p>
+    </div>
+    <!-- End of Footer -->
+  </body>
+</html>

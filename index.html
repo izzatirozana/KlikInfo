@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project PK</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              600: "600px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .carousel-open:checked + .carousel-item {
+        position: static;
+        display: flex;
+      }
+
+      .carousel-item {
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+      }
+
+      #carousel-1:checked ~ .control-1,
+      #carousel-2:checked ~ .control-2,
+      #carousel-3:checked ~ .control-3 {
+        display: block;
+      }
+
+      .carousel-indicators {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+      }
+    </style>
+    <!-- End of Tailwind -->
+  </head>
+  <body class="antialiased bg-white">
+    <div
+      class="z-50 flex flex-wrap justify-between md:justify-around items-center h-16 fixed w-full top-0 drop-shadow" style="background-color: #E37222;"
+    >
+      <a href="./index.html" class="font-bold text-2xl text-zinc-800 px-5 ml-8"
+        >
+          <img src="./assets/logo.png" style="width: 90px; height: 50px;">
+        </a
+      >
+
+      <!-- Mobile -->
+
+      <ul class="md:hidden flex">
+        <div class="group">
+          <button class="p-5 hover:bg-grey-100 w-36" style="color: white;">
+            <span>MENU</span>
+          </button>
+          <div>
+            <ul
+              class="group-hover:block !absolute hidden float-right right-0 bg-white drop-shadow"
+            >
+              <div>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./index.html"> HOME </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./news.html"> NEWS </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./about-us.html"> ABOUT US </a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </ul>
+
+      <!-- Desktop -->
+
+      <ul class="md:flex justify-around items-center hidden" style="color: white;">
+        <a href="./index.html" class="hover:bg-zinc-200 px-8 py-5">HOME</a>
+        <a href="./news.html" class="hover:bg-zinc-200 px-8 py-5">NEWS</a>
+        <a href="./about-us.html" class="hover:bg-zinc-200 px-8 py-5"
+          >ABOUT US</a
+        >
+      </ul>
+    </div>
+    <!-- Main Image -->
+    <div class="h-600 relative">
+      <div
+        class="w-full xl:w-1/2 bg-opacity-60 bg-black p-4 absolute top-full -mt-36 xl:ml-6" style="margin-left: 0px;"
+      >
+        <p
+          class="text-sm xl:text-xl text-white opacity-100 text-center xl:text-justify"
+        >
+        KlikInfo merupakan hasil kolaborasi dari peserta Studi Independen laerning track Data Analyst Generasi GIGIH 2.0 by Yayasan Bangsa Bisa and GoTo dan learning track Full Stack Web Developer by Binar Academy
+        <a href="about-us.html" style="color: #E37222;">selengkapnya...</a>  
+      </p>
+      </div>
+      <img
+        class="w-full h-full object-cover"
+        src="./assets/BannerHome.png"
+      />
+    </div>
+    <!-- Main Image -->
+
+    <!-- Focus -->
+    <div class="p-16 text-center">
+      <h1 class="text-3xl font-semibold">Our Focus</h1>
+      <p class="m-auto w-4/5 lg:w-3/5 mt-16"  style="text-align: justify;">
+        KlikInfo hadir dengan 3 tema data dashboard utama yakni Health, Disaster Management dan Waste. Ketiga tema tersebut merupakan pengerucutan permasalahan utama yang sering kita temui. Untuk saat ini, pada tema Waste tersedia dashboard berjudul "Prevalensi Stunting di Indonesia". Pada Disaster Management tersedia dashboard berjudul "Relasi Pompa Penyedot dengan Kondisi Banjir di DKI Jakarta tahun 2020" dan pada tema Waste tersedia dashboard berjudul "Timbunan Sampah Plastik di Pulau Jawa"
+      </p>
+      <div
+        class="flex flex-wrap justify-center mt-16 gap-x-96 gap-y-16 xl:gap-16 xl:p-0"
+      >
+        <a href="./template-dashboard-waste.html">
+          <div
+            class="w-72 h-96 rounded cursor-pointer hover:scale-110 ease-in-out duration-150 drop-shadow-lg" style="background-color: #66B9BF;"
+          >
+            <img
+              class="w-full h-4/5 object-cover p-4 rounded-lg"
+              src="./assets/DashboardNab.png"
+            />
+            <p class="p-4 text-lg font-semibold">Waste</p>
+          </div>
+        </a>
+        <a href="./template-dashboard-stunt.html">
+          <div
+            class="w-72 h-96 rounded cursor-pointer hover:scale-110 ease-in-out duration-150 drop-shadow-lg" style="background-color: #66B9BF;"
+          >
+            <img
+              class="w-full h-4/5 object-cover p-4 rounded-lg"
+              src="./assets/DashboardOja.png"
+            />
+            <p class="p-4 text-lg font-semibold">Stunting</p>
+          </div>
+        </a>
+        <a href="./template-dashboard-disaster.html">
+          <div
+            class="w-72 h-96 rounded cursor-pointer hover:scale-110 ease-in-out duration-150 drop-shadow-lg" style="background-color: #66B9BF;"
+          >
+            <img
+              class="w-full h-4/5 object-cover p-4 rounded-lg"
+              src="./assets/DahboardGres.jpeg"
+            />
+            <p class="p-4 text-lg font-semibold">Disaster</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Focus -->
+    <!-- Carousel -->
+    <div class="carousel relative rounded relative p-16">
+      <div class="carousel-inner flex w-full justify-center">
+        <!--Slide 1-->
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-1"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+          checked="checked"
+        />
+        <div
+          class="hidden h-fit xl:h-96 w-full xl:w-4/6 carousel-item absolute shadow-xl p-12 rounded flex flex-wrap xl:flex-nowrap" style="background-color: rgba(238, 171, 123, 0.2);"
+        >
+          <img
+            class="object-cover rounded-sm w-full xl:w-2/5 h-48 xl:h-full"
+            src="https://akcdn.detik.net.id/community/media/visual/2020/05/26/78b049c8-1592-4863-a189-1c4bbeeb1a94_43.jpeg?w=700&q=90
+          "
+          />
+          <div class="pt-4 xl:px-12 xl:text-justify">
+            <h1 class="text-md xl:text-lg font-semibold">
+              Menteri LHK: Timbunan Sampah di Indonesia Tahun 2020 Capai 67,8 Juta Ton
+            </h1>
+            <p class="mt-8">
+              Menteri Lingkungan Hidup dan Kehutanan (LHK) Siti Nurbaya Bakar menaksir timbunan sampah di Indonesia tahun ini sebesar 67,8 juta ton. Siti mengatakan...
+            </p>
+            <a href="news-waste.html"><p class="mt-4 font-bold">Selengkapnya</p></a>
+          </div>
+        </div>
+
+        <label
+          for="carousel-3"
+          class="control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-zinc-100 hover:bg-zinc-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center"
+          ><i class="fas fa-angle-left mt-3"></i
+        ></label>
+        <label
+          for="carousel-2"
+          class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-zinc-100 hover:bg-zinc-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+          ><i class="fas fa-angle-right mt-3"></i
+        ></label>
+
+        <!--Slide 2-->
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-2"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+        />
+
+        <div
+          class="hidden h-fit xl:h-96 w-full xl:w-4/6 carousel-item absolute shadow-xl bg-white p-12 rounded flex flex-wrap xl:flex-nowrap" style="background-color: rgba(238, 171, 123, 0.2);"
+        >
+          <img
+            class="object-cover rounded-sm w-full xl:w-2/5 h-48 xl:h-full"
+            src="https://akcdn.detik.net.id/community/media/visual/2022/03/01/ketua-bkkbn-hasto-wardoyo_169.jpeg?w=700&q=90
+          "
+          />
+          <div class="pt-4 xl:px-12 xl:text-justify">
+            <h1 class="text-md xl:text-lg font-semibold">
+              Angka Stunting di Indonesia 24,4%, BKKBN: Melebihi Standar WHO
+            </h1>
+            <p class="mt-8">
+              Kepala Badan Kependudukan dan Keluarga Berencana Nasional (BKKBN) Hasto Wardoyo menyebut angka stunting di Indonesia masih mencapai 24,4 persen...
+            </p>
+            <a href="news-stunting.html"><p class="mt-4 font-bold">Selengkapnya</p></a>
+          </div>
+        </div>
+
+        <label
+          for="carousel-1"
+          class="control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-zinc-100 hover:bg-zinc-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+          ><i class="fas fa-angle-left mt-3"></i
+        ></label>
+        <label
+          for="carousel-3"
+          class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-zinc-100 hover:bg-zinc-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+          ><i class="fas fa-angle-right mt-3"></i
+        ></label>
+
+        <!--Slide 3-->
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-3"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+        />
+
+        <div
+          class="hidden h-fit xl:h-96 w-full xl:w-4/6 carousel-item absolute shadow-xl bg-white p-12 rounded flex flex-wrap xl:flex-nowrap" style="background-color: rgba(238, 171, 123, 0.2);"
+        >
+          <img
+            class="object-cover rounded-sm w-full xl:w-2/5 h-48 xl:h-full"
+            src="https://cdn-2.tstatic.net/wartakota/foto/bank/images/kepala-perwakilan-bank-indonesia-bi-dki-jakarta-hamid-ponco-wibowo.jpg
+          "
+          />
+          <div class="pt-4 xl:px-12 xl:text-justify">
+            <h1 class="text-md xl:text-lg font-semibold">
+              BI DKI Sebut Kerugian Banjir Awal Tahun 2020 Jakarta Hampir Rp 1 Triliun 
+            </h1>
+            <p class="mt-8">
+              Dampak ekonomi banjir Jakarta Januari 2020 dinilai tidak terlalu besar jika dibandingkan banjir-banjir di tahun sebelumnya seperti 2007 dan 2015...
+            </p>
+            <a href="news-disaster.html"><p class="mt-4 font-bold">Selengkapnya</p></a>
+          </div>
+        </div>
+
+        <label
+          for="carousel-2"
+          class="control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-zinc-100 hover:bg-zinc-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+          ><i class="fas fa-angle-left mt-3"></i
+        ></label>
+        <label
+          for="carousel-1"
+          class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-zinc-100 hover:bg-zinc-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+          ><i class="fas fa-angle-right mt-3"></i
+        ></label>
+      </div>
+    </div>
+    <!-- Carousel -->
+    <!-- Footer -->
+    <div
+      class="mt-8 w-full h-fit xl:h-48 shadow-lg p-12 flex flex-wrap xl:flex-nowrap" style="background-color: #07889B;"
+    >
+      <div
+        class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0"
+      >
+        <img
+          class="object-cover w-30 h-12"
+          src="./assets/logo_orange.png"
+        />
+        <div class="w-full flex flex-wrap xl:justify-center">
+          <p class="mt-2 text-white font-bold text-2xl">"Akurat & Terpercaya"</p>
+        </div>
+      </div>
+      <div class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0">
+        <p class="text-white font-bold text-2xl">Visit Us</p>
+        <div class="w-full flex flex-wrap xl:justify-center gap-4 mt-6">
+          <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+          <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+          <i class="fas fa-envelope fa-2x" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap xl:justify-center" style="background-color: black; color: white;">
+      <p>&copy Copyright KlikInfo 2022</p>
+    </div>
+    <!-- End of Footer -->
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project PK</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              600: "600px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- End of Tailwind -->
+  </head>
+  <body class="antialiased bg-white">
+    <div
+      class="z-50 flex flex-wrap justify-between md:justify-around items-center h-16 fixed w-full top-0 bg-white drop-shadow" style="background-color: #E37222;"
+    >
+      <a href="./index.html" class="font-bold text-2xl text-zinc-800 px-5 ml-8"
+        >
+        <img src="./assets/logo.png" style="width: 90px; height: 50px;">
+        </a
+      >
+
+      <!-- Mobile -->
+
+      <ul class="md:hidden flex">
+        <div class="group">
+          <button class="p-5 hover:bg-grey-100 w-36" style="color: white;">
+            <span>MENU</span>
+          </button>
+          <div>
+            <ul
+              class="group-hover:block !absolute hidden float-right right-0 bg-white drop-shadow"
+            >
+              <div>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./index.html"> HOME </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./news.html"> NEWS </a>
+                </button>
+                <button
+                  class="hover:bg-zinc-200 hover:text-black w-36 p-5 block"
+                >
+                  <a href="./about-us.html"> ABOUT US </a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </ul>
+
+      <!-- Desktop -->
+
+      <ul class="md:flex justify-around items-center hidden" style="color: white;">
+        <a href="./index.html" class="hover:bg-zinc-200 px-8 py-5">HOME</a>
+        <a href="./news.html" class="hover:bg-zinc-200 px-8 py-5">NEWS</a>
+        <a href="./about-us.html" class="hover:bg-zinc-200 px-8 py-5"
+          >ABOUT US</a
+        >
+      </ul>
+    </div>
+    <!-- Main Image -->
+    <div class="h-600 relative mb-8">
+      <div class="w-full bg-zinc-800 p-4 absolute top-full">
+        <p class="text-sm xl:text-xl text-white opacity-100 text-center">
+            Menteri LHK: Timbunan Sampah di Indonesia Tahun 2020 Capai 67,8 Juta Ton
+        </p>
+      </div>
+      <img
+        class="w-full h-full object-cover"
+        src="https://akcdn.detik.net.id/community/media/visual/2020/05/26/78b049c8-1592-4863-a189-1c4bbeeb1a94_43.jpeg?w=700&q=90"
+      />
+    </div>
+    <!-- Main Image -->
+
+    <!-- News -->
+    <div class="p-16">
+      <div class="flex justify-center mt-8 w-full">
+        <div class="xl:w-4/5">
+          <p class="text-justify">
+             Jakarta - Menteri Lingkungan Hidup dan Kehutanan (LHK) Siti Nurbaya Bakar menaksir timbunan sampah di Indonesia tahun ini sebesar 67,8 juta ton. Siti mengatakan, jumlah ini kemungkinan masih terus bertambah.
+          </p></br>
+          <p class="text-justify">
+            "Jumlah timbunan sampah yang sangat besar, kira-kira 67,8 juta ton pada tahun 2020. Kelihatannya akan terus bertambah seiring pertumbuhan jumlah penduduk dan dengan semakin membaiknya tingkat kesejahteraan," kata Siti kepada wartawan, Selasa (9/6/2020).
+         </p></br>
+         <p class="text-justify">
+            Denganmenumpuknya sampah juga berdampak semakin banyaknya sampah plastik. Di sisi lain, Siti mengatakan pemerintah sudah melakukan berbagai upaya pengendalian sampah. "Beberapa kebijakan dan aturan bahkan bersifat progresif dan relatif cukup berani. Seperti antara lain penetapan target pengurangan dan penanganan sampah yang terhitung ambisius yaitu 30 persen pengurangan sampah dan 70 persen penanganan sampah serta pelarangan beberapa jenis plastik sekali pakai seperti kantong belanja, kantong kresek, sedotan plastik, dan wadah styrofoam," kata Siti.
+        </p></br>
+        <p class="text-justify">
+            Dari segi bisnis, KLHK telah membuat skema pengurangan sampah produsen selama 10 tahun. Hal ini tercantum dalam Peraturan Menteri KLHK Nomor 75 tahun 2019. Siti menilai penetapan target 10 tahun dirasa cukup dalam menjalani kebijakan ini. Menurutnya, perlu adanya waktu dalam membuat perubahan. "Perlu jadi catatan kita bersama, Perubahan itu berlangsung dalam suatu kurun waktu jadi bukan ujug-ujug atau seketika ini juga terjadi pengurangan atau pembatasan-pembatasan. Jadi kita punya rentan waktu 10 tahun untuk persiapkan diri sambil terus pelajari bagaimana dinamikanya," ujar Siti    
+        </p></br>
+        </div>
+      </div>
+    </div>
+    <!-- News -->
+
+    <!-- Footer -->
+    <div
+      class="mt-8 w-full h-fit xl:h-48 shadow-lg p-12 flex flex-wrap xl:flex-nowrap" style="background-color: #07889B;"
+    >
+      <div
+        class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0"
+      >
+        <img
+          class="object-cover w-30 h-12"
+          src="./assets/logo_orange.png"
+        />
+        <div class="w-full flex flex-wrap xl:justify-center">
+          <p class="mt-2 text-white font-bold text-2xl">"Akurat & Terpercaya"</p>
+        </div>
+      </div>
+      <div class="w-full xl:w-1/2 flex flex-wrap xl:justify-center mt-8 xl:mt-0">
+        <p class="text-white font-bold text-2xl">Visit Us</p>
+        <div class="w-full flex flex-wrap xl:justify-center gap-4 mt-6">
+          <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+          <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+          <i class="fas fa-envelope fa-2x" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap xl:justify-center" style="background-color: black; color: white;">
+      <p>&copy Copyright KlikInfo 2022</p>
+    </div>
+    <!-- End of Footer -->
+  </body>
+</html>
